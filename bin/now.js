@@ -12,10 +12,10 @@ import nodeVersion from 'node-version'
 import checkUpdate from '../lib/check-update'
 import {error} from '../lib/error'
 
-if (nodeVersion.major < 6) {
-  error('Now requires at least version 6 of Node. Please upgrade!')
-  process.exit(1)
-}
+// if (nodeVersion.major < 6) {
+//   error('Now requires at least version 6 of Node. Please upgrade!')
+//   process.exit(1)
+// }
 
 const argv = minimist(process.argv.slice(2))
 
